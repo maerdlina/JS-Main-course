@@ -2,7 +2,7 @@ let kol_vo = Number(prompt('Введите кол-во слоев елки'));
 let stroka = "*";
 
 document.write(`<p>${stroka}<p>`);
-for (let i = 0; i < kol_vo; i++){
+for (var i = 0; i < kol_vo; i++){
     if (i % 2 == 0){
         stroka = stroka.split("*").join("#") + "#";
         document.write(`<p>${stroka}<p>`);
