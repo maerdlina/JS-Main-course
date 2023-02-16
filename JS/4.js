@@ -1,19 +1,16 @@
 let kol_vo = Number(prompt('Введите кол-во слоев елки'));
-let stroka1 = '*';
+let stroka = "*";
 
-document.write(`<p>${stroka1}<p>`);
+document.write(`<p>${stroka}<p>`);
 for (let i = 0; i < kol_vo; i++){
     if (i % 2 == 0){
-        stroka1 = stroka1.split('*').join('#');
-        stroka1 += '#';
-        document.write(`<p>${stroka1}<p>`);
+        stroka = stroka.split("*").join("#") + "#";
+        document.write(`<p>${stroka}<p>`);
     } else{
-        stroka1 = stroka1.split('#').join('*');
-        stroka1 += '*';
-        document.write(`<p>${stroka1}<p>`);
+        stroka = stroka.split('#').join("*") + "*";
+        document.write(`<p>${stroka}<p>`);
     }
 }
-stroka1 = stroka1.replace(/[^a-zа-яё]/gi, '');
-stroka1 += '||'
-document.write(stroka1);
-
+stroka = stroka.replace(/[^a-zа-яё]/gi, "");
+stroka += "||"
+document.write(stroka);
