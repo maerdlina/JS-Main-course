@@ -1,5 +1,5 @@
 function math_rand(min, max){
-    document.write(Math.random() * (max - min) + min);
+    document.write(Math.floor(Math.random() * (max - min) + min));
 }
 
 
