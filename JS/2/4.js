@@ -1,4 +1,4 @@
-function math_rand(min, max){
+math_rand = function(min, max){
     document.write(Math.floor(Math.random() * (max - min) + min));
 }
 

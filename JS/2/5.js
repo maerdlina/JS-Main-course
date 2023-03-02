@@ -1,12 +1,12 @@
-function begin_array(kol_vo){
+begin_array = function(kol_vo){
     for(var i=0; i < kol_vo; i++){
         arr[i] = Number(prompt('Введите число массива'));
     }
     return arr;
 }
 
-function new_array(kol_vo){
-    document.write(`<p>${kol_vo}</p>`);
+new_array = function(kol_vo){
+    // document.write(`<p>${kol_vo}</p>`);
     for (var i = 0; i < kol_vo; i++){
         arr_new[i] = arr[Math.floor(Math.random() * arr.length)];
     }
@@ -19,4 +19,4 @@ var kol_vo = Number(prompt('Введите кол-во элементов мас
 document.write(begin_array(kol_vo));
 
 var kol_vo = Number(prompt('Введите сколько чисел нужно вывести'));
-document.write(new_array(kol_vo));
+document.write(`<p>${new_array(kol_vo)}</>`);
